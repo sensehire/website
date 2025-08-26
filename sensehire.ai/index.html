@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SenseHire</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a90e2, #0073e6);
+      color: white;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: white;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffe066;
+    }
+
+    .hero {
+      background: #f8faff;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #0073e6;
+    }
+
+    .hero p {
+      margin: 1rem auto;
+      max-width: 600px;
+      font-size: 1.1rem;
+    }
+
+    .hero button {
+      background: #0073e6;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #005bb5;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .contact label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .contact button {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f1f1f1;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Dummy logo placeholder (can replace with real logo later) -->
+      <img src="images/S_logo.png" alt="SenseHire">
+      <h1>SenseHire</h1>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>AI Cognitive Hiring with Sentiment Insight</h2>
+    <p>SenseHire is a SaaS-based next-generation talent acquisition platform that leverages Artificial Intelligence to redefine the hiring process. It delivers scalable, bias-free recruitment by equipping organizations with intelligent tools for faster, fairer, and more precise hiring. Through sentiment analysis, it enhances candidate experience and enables data-driven decisions to help build diverse, high-performing teams efficiently.</p>
+    <button onclick="scrollToContact()">Request Demo</button>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>AI-Powered Recruitment</h3>
+        <p>Provide AI-powered talent acquisition and recruitment solutions focused on precision matching and intelligent screening of candidates through smart job description builders, automated profile analysis, and contextual candidate-job alignment.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Assessments</h3>
+        <p>Offers advanced AI-based assessment and evaluation systems, including adaptive interview generation, coding test automation, sentiment analysis, and bias-free scoring mechanisms for comprehensive, fair, and skill-aligned talent evaluation.</p>
+      </div>
+      <div class="card">
+        <h3>Seamless Integration</h3>
+        <p>Integrated productivity and workflow tools for recruitment processes, enabling seamless ATS/HRMS integration, data-driven hiring, automated interviews, collaborative evaluations, and scalable global interviewing solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Adaptive Hiring</h3>
+        <p>Deliver a customizable, secure, and user-centric hiring experience platform that is scalable, inclusive, multilingual, and compliant—blending human insight with AI intelligence to support organizations in building diverse and high-performing teams.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>SenseHire combines AI precision with human insight to power fair, inclusive, and scalable hiring. From niche roles to high-volume recruitment, our platform adapts to every talent need with intelligent assessments, bias-free evaluations, and seamless workflow integration.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage" style="text-align:center; margin-top:1rem; color:green; display:none;">Thank you! We’ll get back to you soon.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+	<p>&copy; 2025 SenseHire. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToContact() {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("formMessage").style.display = "block";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
