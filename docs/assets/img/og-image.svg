@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="SenseHire — AI Hiring Platform">
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1024"/>
+      <stop offset="100%" stop-color="#080C18"/>
+    </linearGradient>
+    <radialGradient id="ogGlowP" cx="18%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="#7338A5" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7338A5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ogGlowT" cx="88%" cy="90%" r="55%">
+      <stop offset="0%" stop-color="#04C1B8" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#04C1B8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ogText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A573F5"/>
+      <stop offset="55%" stop-color="#3DF9E5"/>
+      <stop offset="100%" stop-color="#02F1B6"/>
+    </linearGradient>
+    <linearGradient id="ogMark1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02F1B6"/><stop offset="50%" stop-color="#208DAE"/><stop offset="100%" stop-color="#7338A5"/>
+    </linearGradient>
+    <linearGradient id="ogMark2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#208DAE"/><stop offset="50%" stop-color="#0AD8B4"/><stop offset="100%" stop-color="#208DAE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#ogGlowP)"/>
+  <rect width="1200" height="630" fill="url(#ogGlowT)"/>
+  <g transform="translate(96,150) scale(0.16)">
+    <path fill="url(#ogMark1)" d="M1034.4,526.3h372.8c290.2,0,446.9,108.6,446.9,325.8c0,243.9-147.8,389.9-511,389.9H419.8l236.8-306.2h715c87.2,0,126.4-24.9,126.4-87.2c0-60.5-39.2-85.5-126.4-85.5h-144L1034.4,526.3z"/>
+    <path fill="url(#ogMark2)" d="M1091.9,763.1H723.6c-306.2,0-446.9-137.1-446.9-341.8C276.7,197,426.3,51,787.7,51h848.6l-236.8,309.8H759.2c-85.5,0-126.4,21.4-126.4,81.9c0,60.5,40.9,83.7,126.4,83.7h148.3L1091.9,763.1z"/>
+  </g>
+  <text x="372" y="232" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="800" fill="#FFFFFF">SenseHire</text>
+  <text x="96" y="380" font-family="Inter, system-ui, sans-serif" font-size="60" font-weight="800" fill="#FFFFFF">Hire the best,</text>
+  <text x="96" y="452" font-family="Inter, system-ui, sans-serif" font-size="60" font-weight="800" fill="url(#ogText)">10x faster — with AI.</text>
+  <text x="96" y="528" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="500" fill="#B9BDC9">The enterprise AI platform for sourcing, interviewing &amp; hiring at scale.</text>
+  <rect x="96" y="566" width="1008" height="2" fill="#1e2d55"/>
+  <text x="96" y="606" font-family="JetBrains Mono, monospace" font-size="22" fill="#8A91A5">sensehire.ai  ·  Sourcing · AI Interviews · Analytics · Trust</text>
+</svg>

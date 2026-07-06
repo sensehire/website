@@ -1,0 +1,163 @@
+/* ==========================================================================
+   SenseHire Marketing Site — Design Tokens
+   Mirrors the product design system (sh-web/tailwind.config.js + globals.css).
+   Dark theme is the default; .light overrides on <html>.
+   ========================================================================== */
+
+:root,
+html.dark {
+  /* Brand palette */
+  --brand-primary: #7338A5;   /* purple   */
+  --brand-secondary: #04C1B8; /* teal     */
+  --brand-accent: #3DF9E5;    /* bright teal */
+  --brand-violet: #A573F5;    /* light purple */
+  --brand-mint: #02F1B6;      /* mint     */
+  --brand-sky: #00B4D8;       /* sky cyan */
+  --brand-ocean: #1D97AF;     /* muted teal */
+  --brand-navy: #025385;      /* dark blue */
+  --brand-deep: #172347;      /* deep navy */
+
+  /* Semantic */
+  --success: #02F1B6;
+  --info: #00B4D8;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* Surfaces (dark) */
+  --bg-base: #080C18;
+  --bg-surface: #131D3B;
+  --bg-surface-2: #172347;
+  --bg-surface-3: #1e2d55;
+
+  /* Text (dark) — contrast-tuned values from app overrides */
+  --text-primary: #E8E9ED;
+  --text-secondary: #D2D6DF;
+  --text-muted: #C3C8D4;
+  --text-faint: #8A91A5;
+
+  /* Borders (dark) */
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-default: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.20);
+
+  /* Glass (dark) */
+  --glass-bg: rgba(255, 255, 255, 0.045);
+  --glass-bg-strong: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-border-strong: rgba(255, 255, 255, 0.14);
+
+  /* Header backdrop */
+  --header-bg: rgba(8, 12, 24, 0.72);
+
+  /* Shadows / glow */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.30);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --shadow-glass-lg: 0 20px 60px rgba(0, 0, 0, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --glow-purple: 0 0 24px rgba(115, 56, 165, 0.45), 0 0 48px rgba(115, 56, 165, 0.18);
+  --glow-teal: 0 0 24px rgba(4, 193, 184, 0.45), 0 0 48px rgba(4, 193, 184, 0.18);
+  --glow-soft: 0 8px 40px -12px rgba(4, 193, 184, 0.45), 0 8px 40px -16px rgba(115, 56, 165, 0.45);
+
+  /* Aurora / glow layers tuned for dark */
+  --aurora-1: rgba(115, 56, 165, 0.22);
+  --aurora-2: rgba(4, 193, 184, 0.18);
+  --aurora-3: rgba(165, 115, 245, 0.14);
+  --grid-line: rgba(255, 255, 255, 0.05);
+  --dot-color: rgba(255, 255, 255, 0.05);
+
+  color-scheme: dark;
+}
+
+html.light {
+  /* Surfaces (light) */
+  --bg-base: #f5f3ff;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f0ebfb;
+  --bg-surface-3: #e9e3f8;
+
+  /* Text (light) — contrast-tuned values from app overrides */
+  --text-primary: #1a1035;
+  --text-secondary: #2c2151;
+  --text-muted: #4b3f70;
+  --text-faint: #6b5e8a;
+
+  /* Borders (light) */
+  --border-subtle: rgba(115, 56, 165, 0.08);
+  --border-default: rgba(26, 16, 53, 0.18);
+  --border-strong: rgba(26, 16, 53, 0.32);
+
+  /* Glass (light) */
+  --glass-bg: rgba(255, 255, 255, 0.70);
+  --glass-bg-strong: rgba(255, 255, 255, 0.90);
+  --glass-border: rgba(115, 56, 165, 0.14);
+  --glass-border-strong: rgba(115, 56, 165, 0.22);
+
+  /* Header backdrop */
+  --header-bg: rgba(245, 243, 255, 0.78);
+
+  /* Shadows / glow — softer for light */
+  --shadow-card: 0 8px 28px -12px rgba(115, 56, 165, 0.22);
+  --shadow-glass: 0 12px 36px -14px rgba(115, 56, 165, 0.24);
+  --shadow-glass-lg: 0 26px 70px -22px rgba(115, 56, 165, 0.30);
+  --glow-purple: 0 0 24px rgba(115, 56, 165, 0.22);
+  --glow-teal: 0 0 24px rgba(4, 193, 184, 0.22);
+  --glow-soft: 0 18px 50px -22px rgba(115, 56, 165, 0.40);
+
+  --aurora-1: rgba(115, 56, 165, 0.16);
+  --aurora-2: rgba(4, 193, 184, 0.14);
+  --aurora-3: rgba(165, 115, 245, 0.12);
+  --grid-line: rgba(115, 56, 165, 0.07);
+  --dot-color: rgba(115, 56, 165, 0.08);
+
+  color-scheme: light;
+}
+
+:root {
+  /* Brand gradients (theme-agnostic) */
+  --gradient-brand: linear-gradient(135deg, #7338A5 0%, #04C1B8 100%);
+  --gradient-brand-vivid: linear-gradient(135deg, #7338A5 0%, #A573F5 35%, #04C1B8 65%, #3DF9E5 100%);
+  --gradient-text: linear-gradient(100deg, #A573F5 0%, #3DF9E5 55%, #02F1B6 100%);
+  --gradient-mint: linear-gradient(135deg, #02F1B6 0%, #04C1B8 100%);
+
+  /* Radii */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-wide: 1320px;
+  --header-h: 72px;
+
+  /* Type */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-fast: 140ms;
+  --t-med: 260ms;
+  --t-slow: 480ms;
+
+  /* Z-index */
+  --z-bg: 0;
+  --z-base: 1;
+  --z-header: 100;
+  --z-menu: 200;
+  --z-top: 300;
+}
